@@ -15,61 +15,61 @@ export const allImages = [
     {
         id: "1",
         imageUrl: image1,
-        tags: "JavaScript Framework"
+        tags: "A man holding handsome dog"
     },
     {
         id: "2",
         imageUrl: image2,
-        tags: "Programming Language"
+        tags: "She's checking on her ecommerce store"
     },
     {
         id: "3",
         imageUrl: image3,
-        tags: "Coding React"
+        tags: "Delicious food prepared by white a cuit chef"
     },
     {
         id: "4",
         imageUrl: image4,
-        tags: "Winter Garden"
+        tags: "Sport guy swimming on his own business"
     },
     {
         id: "5",
         imageUrl: image5,
-        tags: "User Interface"
+        tags: "Cute dog and sweet environment with her"
     },
     {
         id: "6",
         imageUrl: image6,
-        tags: "Team Work"
+        tags: "Software programmer workspaces"
     },
     {
         id: "7",
         imageUrl: image7,
-        tags: "Team Work"
+        tags: "A gamer on virtual reality"
     },
     {
         id: "8",
         imageUrl: image8,
-        tags: "Team Work"
+        tags: "Nature is beautiful with her and her friend standing opposite"
     },
     {
         id: "9",
         imageUrl: image9,
-        tags: "Team Work"
+        tags: "Two friends sitting on a car"
     },
     {
         id: "10",
         imageUrl: image10,
-        tags: "Team Work"
+        tags: "Black is beautiful"
     },
     {
         id: "11",
         imageUrl: image11,
-        tags: "Team Work"
+        tags: "A depressed guy"
     },
     {
         id: "12",
         imageUrl: image12,
-        tags: "Team Work"
+        tags: "Little kid playing football on a couch"
     },
 ]

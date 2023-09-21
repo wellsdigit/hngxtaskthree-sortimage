@@ -24,29 +24,10 @@ const style = {
 }
 
   return (
-    // <div
-    //   ref={ref}
-    //   style={{
-    //     width: '100px',
-    //     height: '100px',
-    //     backgroundImage: `url(${src})`,
-    //     backgroundSize: 'cover',
-    //     cursor: 'pointer',
-    //   }}
-    //   onClick={() => onImageMove(index)}
-    // >
-    //   <div className="tags">
-    //     {<span>{tags}</span>}
-    //   </div>
-    // </div>
     <>
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-    <div>
-      <div className="tags">
-        {<img className='w-[100%]' src={src}/>}
-        {<span>{tags}</span>}
-      </div>
-    </div>
+    <div ref={setNodeRef} style={style} {...attributes} {...listeners} className='group image-box w-[100%] h-[300px] md:w-[30%] lg:h-[400px] xl:h-[500px] rounded-xl overflow-hidden relative'>
+        <img className='w-[100%] h-full object-cover' src={src}/>
+        {<span className='block absolute bottom-0 translate-y-32 p-5 bg-[#00000040] backdrop-blur-sm text-white group-hover:transition group-hover:duration-300 w-full transition duration-300 group-hover:translate-y-0'>{tags}</span>}
     </div>
     </>
   );
