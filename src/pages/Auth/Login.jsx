@@ -14,7 +14,7 @@ const initialValues = {
     password: '1Password'
 }
 
-function Login() {
+function Login({setToken}) {
     const [loading, setLoading] = useState(false)
     const navigate = useNavigate()
     const onSubmitHandler = async (values, { resetForm }) => {
@@ -36,7 +36,10 @@ function Login() {
                     progress: undefined,
                     theme: "dark",
                     });
-                  navigate('/');
+                    setToken(data);
+                    navigate('/app');
+                    // Reset the form after successful submission
+                    resetForm();
             } catch (error) {
                 toast.error(`${error.message}`, {
                     position: "top-right",
@@ -50,9 +53,6 @@ function Login() {
                     });
                   setLoading(false);
             }
-        
-        // Reset the form after successful submission
-        resetForm();
       };
 
     // Validation processing
@@ -76,7 +76,7 @@ function Login() {
                     <Form>
                         <div className='flex flex-col gap-4'>
                             <InputDynamic name={'email'} type={'email'} label={'Email'} InputId={'eml'}/>
-                            <InputDynamic name={'password'} type={'password'} label={'Password'} InputId={'eml'}/>
+                            <InputDynamic name={'password'} type={'password'} label={'Password'} InputId={'pswd'}/>
                             {loading ? 
                             <>
                             <button
