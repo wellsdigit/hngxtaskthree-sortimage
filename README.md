@@ -1,15 +1,5 @@
-# React + Vite
+# Image Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-Certainly! Here's an updated version of your project's README with the repository name "hngxtaskthree-sortimage" and the email address "salamiwells@gmail.com" as the contact:
-
-```markdown
 # Project: hngxtaskthree-sortimage
 
 ![Project Logo](link-to-your-logo.png)
