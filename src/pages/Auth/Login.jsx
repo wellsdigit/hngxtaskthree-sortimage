@@ -26,7 +26,7 @@ function Login({setToken}) {
                   })
                   if (error) throw error;
                   setLoading(false);
-                  toast.success('Successful!', {
+                  toast.success('Login Successful!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -34,7 +34,7 @@ function Login({setToken}) {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
-                    theme: "dark",
+                    theme: "light",
                     });
                     setToken(data);
                     navigate('/app');
@@ -49,7 +49,7 @@ function Login({setToken}) {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
-                    theme: "dark",
+                    theme: "light",
                     });
                   setLoading(false);
             }
