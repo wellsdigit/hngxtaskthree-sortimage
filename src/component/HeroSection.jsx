@@ -1,19 +1,20 @@
 import React from 'react'
 
-function HeroSection() {
+function HeroSection({handleSearch, onChange}) {
   return (
     <div className='py-4 px-5 flex justify-center'>
-        <form className='w-full md:w-[50%]'>
+        <form className='w-full md:w-[50%]' onSubmit={handleSearch}>
             <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 
                 </div>
                 <input
-                type="search"
-                id="default-search"
-                className="block w-full p-4 pl-5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
-                placeholder="Search Images, by tag name..."
-                required=""
+                    type="search"
+                    id="default-search"
+                    className="block w-full p-4 pl-5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
+                    placeholder="Search Images, by tag name..."
+                    required=""
+                    onChange={onChange}
                 />
                 <button
                 type="submit"
