@@ -10,8 +10,8 @@ import supabase from '../../config/supabaseClient'
 
 
 const initialValues = {
-    email: 'user@example.com',
-    password: '1Password'
+    email: '',
+    password: ''
 }
 
 function Login({setToken}) {
@@ -64,7 +64,7 @@ function Login({setToken}) {
         , 'Password must be at least 8 characters long and have only letters, numbers and/or special characters'),
     })
   return (
-    <div className='w-full min-h-screen flex flex-col justify-center items-center'>
+    <div className='w-full min-h-screen flex flex-col relative justify-center items-center'>
         <Formik
             initialValues={initialValues}
             validationSchema={validate}
@@ -75,8 +75,8 @@ function Login({setToken}) {
                     <Heading title={'Sign In'}/>
                     <Form>
                         <div className='flex flex-col gap-4'>
-                            <InputDynamic name={'email'} type={'email'} label={'Email'} InputId={'eml'}/>
-                            <InputDynamic name={'password'} type={'password'} label={'Password'} InputId={'pswd'}/>
+                            <InputDynamic name={'email'} placeholder={'Enter email address'} type={'email'} label={'Email'} InputId={'eml'}/>
+                            <InputDynamic placeholder={'Enter password'} name={'password'} type={'password'} label={'Password'} InputId={'pswd'}/>
                             {loading ? 
                             <>
                             <button
